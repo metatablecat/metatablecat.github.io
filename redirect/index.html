@@ -18,7 +18,7 @@
         // Function to fetch the redirect map and perform the redirection
         async function redirect() {
             try {
-                const response = await fetch('res/redir.json');
+                const response = await fetch('./redir.json');
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
