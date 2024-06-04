@@ -1,5 +1,7 @@
 {
 	"masto": "https://tech.lgbt/@metatablecat",
 	"roblox": "https://www.roblox.com/users/8094244/profile",
-	"devforum": "https://devforum.roblox.com/u/metatablecatmaid"
+	"devforum": "https://devforum.roblox.com/u/metatablecatmaid",
+        "gender": "/redirect/?to=gender2",
+	"gender2": "/redirect/?to=gender"
 }
