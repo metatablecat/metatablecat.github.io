@@ -8,6 +8,8 @@
 	--trans-flag-blue: #5BCEFA;
 	--trans-flag-pink: #F5A9B8;
 	--trans-flag-white: #ffffff;
+
+	--footer-content-size: 68px; /* 64 + 12 + 16 + 8 */
 }
 
 @font-face {
@@ -116,7 +118,7 @@ h2 {
 }
 
 .console-bg {
-	height: 100vh;
+	height: calc(100vh - var(--footer-content-size) - 33px);
 	padding: 15px;
 	box-sizing: border-box;
 	background-color: #000000;
@@ -192,4 +194,27 @@ h2 {
 	margin-right: 8px;
 	height: 24px; /* Optional: Set the height of the image */
   width: auto; /* Optional: Keep the aspect ratio of the image */
+}
+
+.button {
+	margin-right: 8px;
+	height: 48px;
+	width: auto;
+}
+
+.footer-small {
+	text-align: left;
+}
+
+.footer {
+  background-color: #000000;
+  text-align: center;
+  padding: 16px;
+  position: relative;
+  bottom: 0;
+	height: var(--footer-content-size);
+
+	border-style: solid;
+	border-width: 0px 1px 1px 1px;
+	border-color: var(--color-main);
 }
