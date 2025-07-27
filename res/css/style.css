@@ -28,6 +28,10 @@
 
 /* Root component rules */
 
+a {
+	text-decoration: none;
+}
+
 div {
 	margin: 0px; /* remove margin from dividers, some old browsers have margins on them */
 	padding: 0px;
@@ -57,6 +61,10 @@ p, span, noscript {
 }
 
 a {
+	color: var(--color-link);
+}
+
+a.link-text {
 	margin: 0;
 	padding: 0;
 	font-family: 'ComicMono', monospace;
@@ -64,17 +72,7 @@ a {
 	font-weight: 400;
 }
 
-a:link {
-	color: var(--color-link);
-	text-decoration: none;
-}
-
-a:visited {
-	color: var(--color-link);
-	text-decoration: none;
-}
-
-a:hover {
+a.link-text:hover {
 	background-color: var(--color-link);
 	text-decoration: underline;
 	color: var(--color-link-hover);
@@ -217,4 +215,12 @@ h2 {
 	border-style: solid;
 	border-width: 0px 1px 1px 1px;
 	border-color: var(--color-main);
+}
+
+/* osa components */
+.osa-banner {
+	border: solid;
+	border-width: 4px 4px 4px 4px;
+	border-color: red;
+	padding: 8px;
 }
